@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: BentonSansBold, Arial, sans-serif;
+}
+
+.h-center {
+    margin: auto;
+}
+
+#header-wrapper {
+    width: 100%;
+    min-height: 1px;
+}
+
+#sub-header-wrapper {
+    width: 100%;
+    height: 7.5vh;
+    background-color: white;
+}
+
+#sub-header {
+    width: 83%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#top-ad {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#top-ad > img {
+    width: 87%;
+    height: 100%;
+    margin: auto;
+}
