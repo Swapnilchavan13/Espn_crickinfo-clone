@@ -1,0 +1,23 @@
+#headermaininner{
+    width: 85%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+}
+.card{
+    width: 290px;
+    height: 132px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 10px;
+    display:grid;
+}
+#cardInner{
+    padding: 10px;
+}
+
+.verticalLine{
+    border-left: 1px solid rgb(255, 255, 255);
+     height: 132px;
+     margin-top: 10px;
+}
