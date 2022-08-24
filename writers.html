@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> writers</title>
+    <!-- <link rel="stylesheet" href="prodetail.css"> -->
+    <style> 
+ 
+
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+    body{
+      background-color: rgb(230, 213, 213);
+    }
+      #total_container{
+        margin:auto;
+        width: 95% ;
+        gap:  25px ;
+        margin: auto;
+        margin-top: 25px;
+        display: grid;
+        padding: 5px;
+        grid-template-columns: 75% 22%;
+     
+        /* border:  1px solid red; */
+    }
+
+
+    #writers {
+        border: 1px solid gray;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 5px;
+        gap: 10px;
+      }
+
+      .wimage > img{
+        width: 100px;
+        height: 70px;
+        border-radius: 200px;
+        padding: 5px;
+      }
+
+      #wcards{
+        border:  1px solid whitesmoke;
+        display: flex;
+        margin: 3px;
+      }
+   
+                 
+       #sidebar{
+           border:  1px solid yellow;
+      }
+    
+    </style>
+</head>
+<body>
+    
+     
+
+        <div id="total_container">
+            <div id="writers"> </div>
+            <div id="sidebar"> </div>
+      </div>
+
+</body>
+</html>
+
+<script>
+     let data= [
+        {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/105900/105930.gif",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@cricketaakash",
+           
+        },
+        {
+          "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/178600/178647.gif",
+            "title" : "Deputy editor, ESPNcricinfo",
+            "name": "Charlotte Tilbury",
+            "desc": "@alanroderick",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/320000/320032.png",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@afidelf",
+           
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/73900/73941.1.jpg",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@andymcg_cricket",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/103600/103650.gif",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@miller_cricket",
+           
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/314600/314653.png",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@FirdoseM",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/103600/103657.gif",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "@ajarrodkimber",
+           
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/137600/137625.2.gif",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "https://twitter.com/cricketaakash",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/314600/314657.png",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "https://twitter.com/cricketaakash",
+           
+          },
+          {
+            "image":  "https://wassets.hscicdn.com/static/images/headshot_fallback.svg",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "https://twitter.com/cricketaakash",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_h_100/lsci/db/PICTURES/CMS/320000/320032.png",
+            "title" : "Former India opening batter",
+            "name": "Charlotte Tilbury",
+            "desc": "https://twitter.com/cricketaakash",
+           
+          },
+    
+    ]
+
+
+   function display(data){
+        data.forEach(function (elem) {
+
+         var wcards = document.createElement("div");
+         wcards.setAttribute("id","wcards")
+        //   var image = document.createElement("img");
+       //   image.setAttribute("src", elem.image);
+        let wimage = document.createElement("div");
+        wimage.setAttribute("class","wimage")
+
+        let wdetails = document.createElement("div");
+        wdetails.setAttribute("class","wdetails")
+
+         let image = document.createElement('img')
+         image.src =  elem.image 
+     
+          let title = document.createElement("h3");
+         title.innerText = elem.title;
+         let name = document.createElement("h4");
+         name.innerText = elem.name;
+         let desc= document.createElement("p");
+         desc.innerText = elem.desc;
+     
+         desc.setAttribute("href","wdetails")
+   
+         wimage.append(image)
+         wdetails.append(title,name, desc)
+         wcards.append(wimage,wdetails);
+         document.querySelector("#writers").append(wcards);
+     });
+
+
+   }
+   display(data)
+
+
+  </script>
+  
