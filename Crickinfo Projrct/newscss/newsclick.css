@@ -1,0 +1,28 @@
+
+         *{
+        font-family: BentonSans-Bold, Arial, "Noto Sans", sans-serif;
+    }
+       body{
+        background-color: #F9F9FB;
+    }
+    img{
+        width: 90%;
+        border-radius: 10px;
+        text-align: center;
+    }
+        #clickimg{
+            width: 60%;
+            background-color: white;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            padding-left: 80px;
+        }
+        p{
+            width: 70%;
+            text-align: justify;
+            color: gray;
+            margin-left: 70px;
+            font-size: 12px;
+            line-height: 25px;
+        }
