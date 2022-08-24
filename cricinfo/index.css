@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f8f9fa;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: BentonSans, Arial, Noto Sans, sans-serif;
+}
+
+#titlelogo {
+    border-radius: 50%;
+}
+
+#headerMain {
+    width: 100%;
+    background-color: #038dcc;
+    height: 190px;
+}
+
+#headerSec {
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+#headerSecond {
+    width: 100%;
+    background-color: #03a9f4;
+    height: 45px;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+#btn>button {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    position: relative;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+button:hover::before {
+    width: 100%;
+    height: 2px;
+}
+.iplLogo{
+    width: 25px;
+    padding: 5px 10px;
+}
+.iplTeamName{
+    display: flex;
+}
