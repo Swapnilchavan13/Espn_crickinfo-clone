@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./style/nav_css.css">
+    <link rel="stylesheet" href="./style/indexContent.css">
+    <link rel="stylesheet" href="./style/foooter.css">
+    <link rel="stylesheet" href="./style/left.css">
+    <link rel="stylesheet" href="./style/headerMain.css">
+    <title>Check Live Cricket</title>
+</head>
+
+<body>
+
+    <div id="headerMain">
+        <div id="headerMainSec">
+            <div id="btn">
+                <button onclick="showMatches()">Matches</button>
+                <button onclick="showEngVsSa()">ENG VS SA</button>
+                <button onclick="showMenHundred()">Men's Hundred</button>
+                <button onclick="show()"> </button>
+                <button>County</button>
+                <button>SA v PAK</button>
+            </div>
+            <div id="headermaininner">
+                <div id="card1" class="card">
+                    <div id="cardInner">
+                        <div>
+                            <h5 style="margin: 0px 15px 0px 0px;color: rgb(0, 0, 0);" id="type">LIVE</h5>
+                        </div>
+                        <div>
+                            <h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs">
+                                <span style="color: black;">T20 .</span> SA VS ENG
+                            </h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313125.logo.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf">SA</h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_square_w_80/lsci/db/PICTURES/CMS/313100/313114.logo.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams">ENG</h5>
+                        </div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);">
+                            <h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams"> SA Batting
+                                </h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="vr1" class="verticalLine"></div>
+                <div id="card2" class="card">
+                    <div id="cardInner">
+                        <div>
+                            <h5 style="margin: 0px 15px 0px 0px;color: rgb(31, 17, 17);" id="type1">NEXT MATCH</h5>
+                        </div>
+                        <div>
+                            <h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs">
+                                <span style="color: black;">T20 .</span> SL vs AFG
+                            </h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/rcb.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf1"></h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/kol.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams1"></h5>
+                        </div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);">
+                            <h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams1">AISA CUP T20</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="vr2" class="verticalLine"></div>
+                <div id="card3" class="card">
+                    <div id="cardInner">
+                        <div>
+                            <h5 style="margin: 0px 15px 0px 0px;color: rgb(36, 26, 26);" id="type2">RESULT</h5>
+                        </div>
+                        <div>
+                            <h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs">
+                                <span style="color: black;">T20 .</span> Delhi Capitals vs Punjab Kings
+                            </h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/del.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf2"></h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/pun.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams2"></h5>
+                        </div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);">
+                            <h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams1">DC won the match</h5>
+                        </div>
+                    </div>
+                </div>
+                <div id="vr3" class="verticalLine"></div>
+                <div id="card4" class="card">
+                    <div id="cardInner">
+                        <div>
+                            <h5 style="margin: 0px 15px 0px 0px;color: rgb(36, 26, 26);" id="type3">LIVE</h5>
+                        </div>
+                        <div>
+                            <h5 style="margin: 3px 15px 0px 0px;font-size: .7rem;color: rgb(151, 149, 149);" id="vs">
+                                <span style="color: black;">T20 .</span> CSK vs Punjab RR
+                            </h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/che.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teamf3"></h5>
+                        </div>
+                        <div class="iplTeamName"><img class="iplLogo" src="./image/ipl_team_logo/raj.png" alt="">
+                            <h5 style="margin: 15px 15px 0px 0px;font-size: .7rem;" id="teams3"></h5>
+                        </div>
+                        <div style="width: 100%; background-color: rgb(211, 208, 208);">
+                            <h5 style="margin: 5px 15px 0px 0px;font-size: .7rem;" id="teams1">Match yet to begin</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="headerSec"></div>
+    <div style="width: 80%;margin: auto;margin-top: 20px;">
+        <img id="ads" style="width: 100%" src="./image/A.jpeg" alt="">
+    </div>
+    <div id="content">
+        <div id="right"></div>
+        <div id="newsContent">
+
+        </div>
+        <div id="leftContent">
+            <div id="lefttop">
+                <div style="width: 100%;height: auto; border-radius: 7px;">
+                    <h5 style="padding: 15px 16px 0px 16px;">News Headlines</h5>
+                    <hr>
+                    <div style="padding: 5px;">
+                        <li><i class="arrow right"></i><a href="">Abbas takes hat-trick for Hampshire</a></li>
+                        <li><i class="arrow right"></i><a href="">Maroof on indefinite maternity leave</a></li>
+                        <li><i class="arrow right"></i><a href="">Fakhar, Faheem give Pakistan T20I series</a></li>
+                        <li><i class="arrow right"></i><a href="">Stokes set to miss New Zealand Test</a></li>
+                        <li><i class="arrow right"></i><a href="">Babar hails Pak's complete team effort</a></li>
+                        <li><i class="arrow right"></i><a href="">Parkinson's ball-of-the-century contender</a></li>
+                    </div>
+                </div>
+            </div>
+            <div id="vertical">
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319200/319210.4.jpg"><br>
+                    <p style="margin: 5px 32px;">Keep up with the experts</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/233500/233595.4.jpg"><br>
+                    <p style="margin: 5px 32px;"> On This Day: The IPL blasts off</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319500/319508.5.png"><br>
+                    <p style="margin: 5px 32px;">Quote Unquote: who's saying what?</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/302500/302516.7.jpg"><br>
+                    <p style="margin: 5px 32px;">The greatest IPL performances 2008-2020</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/315500/315596.4.jpg"><br>
+                    <p style="margin: 5px 32px;">Santner: 'I watched a lot of Vettori. I thought I'd give it a crack'
+                    </p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/318500/318501.5.png"><br>
+                    <p style="margin: 5px 32px;">Who played the most cricket in the pandemic year?</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/275100/275180.5.jpg"><br>
+                    <p style="margin: 5px 32px;">The Tendulkar innings Tamim Iqbal wishes he'd played</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/306700/306722.8.jpg"><br>
+                    <p style="margin: 5px 32px;">The top 20 balls of this century</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/314700/314708.5.png"><br>
+                    <p style="margin: 5px 32px;">Bangladesh's legacy of left-arm spin</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/319000/319011.5.jpg"><br>
+                    <p style="margin: 5px 32px;">Records index
+                        Most runs, most wickets and a lot more</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/314000/314073.5.jpg"><br>
+                    <p style="margin: 5px 32px;">Raina: 'You have to believe you can do miracles, Sachin paaji told me'
+                    </p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/310500/310511.5.png"><br>
+                    <p style="margin: 5px 32px;">20 women cricketers for the 2020s</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/311200/311206.2.jpg"><br>
+                    <p style="margin: 5px 32px;">Steven Finn on a Curtly Ambrose spell he wishes he'd bowled</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/309000/309026.5.png"><br>
+                    <p style="margin: 5px 32px;">Your shots: pictures by fans</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/313000/313097.4.jpg"><br>
+                    <p style="margin: 5px 32px;">Chamari Athapaththu on her idol, Sanath Jayasuriya</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/317800/317874.5.jpg"><br>
+                    <p style="margin: 5px 32px;">Rankings: Who's leading in every format</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/183600/183663.4.jpg"><br>
+                    <p style="margin: 5px 32px;">'If the batsman doesn't think they can score off the front foot, you're
+                        bowling too short'</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/305400/305451.4.jpg"><br>
+                    <p style="margin: 5px 32px;">20 cricketers for the 2020s: players we think will dominate the decade
+                    </p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/313000/313071.5.jpg"><br>
+                    <p style="margin: 5px 32px;">How Starc went from 'f*** you' to 'I can't hear you'</p>
+                </a>
+                <a id="nav" href="">
+                    <img class="zoom" width="260" height="150" style="border-radius: 15px; margin-top: 15px;"
+                        src="https://img1.hscicdn.com/image/upload/f_auto,t_gn_w_656/lsci/db/PICTURES/CMS/306800/306879.5.jpg"><br>
+                    <p style="margin: 5px 32px;">Remember the keeper Australia rushed to Pakistan for a Test?</p>
+                </a>
+
+            </div>
+        </div>`
+
+<script type="module" src="./main.js"></script>
+        
+        <div id="footer"></div>
+
+        <script src="./javaScript/newContect.js"></script>
+        <script src="./javaScript/showcard.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+#lefttop {
+    width: 100%;
+}
+
+#lefttop>div>div>li>a {
+    text-decoration: none;
+    color: #070707;
+    font-size: .76rem;
+}
+
+#lefttop>div>div>li:hover {
+    background-color: rgb(237, 233, 233);
+    cursor: pointer;
+}
+
+#lefttop>div {
+    background-color: white;
+    box-shadow: 1px 2px 5px 1px rgb(221, 219, 219);
+}
+
+.arrow {
+    border: solid rgb(255, 0, 0);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    margin-right: 13px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+#vertical{
+    float: right;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+#vertical>a{
+    margin: 20px 20px;
+     border-radius: 15px; 
+     text-decoration: none;
+     color: #2B2C2D;
+     font-size: 15px;
+}
+#vertical>a:hover{
+    color: #038dcc;
+}
+.zoom:hover {
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
