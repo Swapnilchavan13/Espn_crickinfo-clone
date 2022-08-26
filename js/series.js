@@ -2,11 +2,29 @@ let top_ads = ["https://tpc.googlesyndication.com/simgad/11321537340682502286?",
     "https://tpc.googlesyndication.com/simgad/4271044209677937619?"]
 
 
+    let right_ads = ["https://tpc.googlesyndication.com/simgad/12365718001132389279?",
+    "https://tpc.googlesyndication.com/simgad/7411421147266363877?",
+    "https://tpc.googlesyndication.com/simgad/12598192234913773850?",
+    "https://tpc.googlesyndication.com/simgad/15841686395453576998?",
+    "https://tpc.googlesyndication.com/simgad/15582684688719062778?",
+    "https://tpc.googlesyndication.com/simgad/12239562037567381132?",
+    "https://tpc.googlesyndication.com/simgad/6181019838457675129?",
+    "https://tpc.googlesyndication.com/simgad/3541276014299803378?",
+    "https://tpc.googlesyndication.com/simgad/16995279651211156069?",
+    "https://tpc.googlesyndication.com/simgad/4461905471653839514?"]
+
+
 
 window.addEventListener('load', () => {
     document.getElementById('series').innerHTML = currentCricket();
 
     document.getElementById('topAd').setAttribute('src', `${top_ads[Math.floor(Math.random() * 2)]}`)
+
+
+    document.getElementById('rightAd1').setAttribute('src', `${right_ads[Math.floor(Math.random() * right_ads.length)]}`)
+    document.getElementById('rightAd2').setAttribute('src', `${right_ads[Math.floor(Math.random() * right_ads.length)]}`)
+
+
    
 })
 
@@ -179,6 +197,101 @@ function currentCricket() {
 }
 
 // future and recently
+
+
+
+
+
+
+
+function futureSeriesTornaments() {
+    let future_sereis_tornaments = `<div id="ser-left">
+
+    <h2>International Tours</h2>
+    <ul>
+        <li><a href="#">New Zealand tour of England, Sep - Oct 2022</a></li>
+        <li><a href="#">Sri Lanka tour of England, Oct - Nov 2022</a></li> 
+        <li><a href="#">Ireland tour of Netherlands, Dec 2022</a></li>
+        <li><a href="#">Pakistan tour of England, Jan 2023</a></li>
+        <li><a href="#">South Africa tour of Ireland, Feb 2023</a></li>
+        <li><a href="#">Zimbabwe tour of Ireland, Mar 2023</a></li>
+        <li><a href="#">India tour of England, Apr - May 2023</a></li>
+        <li><a href="#">England tour of Pakistan, Jun 2023</a></li>
+        <li><a href="#">England tour of West Indies, Jul - Aug 2023</a></li>   
+    </ul>
+
+    <h2>International Tournaments</h2>
+    <ul>
+        <li><a href="/series/icc-women-s-world-cup-2022-22-1219028">Women's World Cup</a></li>    
+    </ul>
+
+</div>
+<div id="ser-right"></div>`
+
+    return future_sereis_tornaments;
+}
+
+function recentlyConcluded() {
+    let recently_concluded = `<div id="ser-left">
+
+    <h2>International Tours</h2>
+    <ul>
+
+        <li><a href="#">Namibia v Uganda</a></li>
+        <li><a href="#">NAM Over-50s v ZIM Over-50s</a></li>
+        <li><a href="#">BDESH-U19 v PAK-U19</a></li>
+        <li><a href="#">India v England</a></li>
+        <li><a href="#">West Indies v Sri Lanka</a></li>
+        <li><a href="#">New Zealand v Bangladesh</a></li>
+        <li><a href="#">Afghanistan v Zimbabwe</a></li>
+        <li><a href="#">South Africa Women in IND</a></li>
+        <li><a href="#">Ireland A in BDESH</a></li>
+        <li><a href="#">Road Safety Series</a></li>
+        <li><a href="#">New Zealand v Australia</a></li>
+        <li><a href="#">England Women in NZ</a></li>
+        <li><a href="#">Pakistan v South Africa</a></li>
+        <li><a href="#">Bangladesh v West Indies</a></li>
+        <li><a href="#">Pakistan Women in SA</a></li>
+        <li><a href="#">Sri Lanka v England</a></li>
+        <li><a href="#">Australia v India</a></li>
+        <li><a href="#">Ireland tour of UAE</a></li>
+        <li><a href="#">Afghanistan in UAE</a></li>
+        <li><a href="#">New Zealand v Pakistan</a></li>
+        <li><a href="#">South Africa v Sri Lanka</a></li>
+        <li><a href="#">Pakistan A in New Zealand</a></li>
+        <li><a href="#">West Indies A in New Zealand</a></li>
+        <li><a href="#">New Zealand v West Indies</a></li>
+        <li><a href="#">South Africa v England</a></li>
+        <li><a href="#">Pakistan v Zimbabwe</a></li>
+        <li><a href="#">Australia Women v New Zealand Women</a></li>
+        
+    </ul>
+
+    <h2>T20 Tournaments</h2>
+    <ul>
+
+        <li><a href="#">T20 Challenge</a></li>
+        <li><a href="#">Big Bash League</a></li>
+        <li><a href="#">Abu Dhabi T10</a></li>
+        
+    </ul>
+</div>
+
+<div id="ser-right">
+
+    <h2>Associate Cricket</h2>
+    <ul>
+
+        <li><a href="#">Buddha Cup</a></li>
+        <li><a href="#">Balkan Cup</a></li>
+        <li><a href="#">Hong Kong PL T20</a></li>
+        <li><a href="#">Richelieu Franchise T20</a></li>
+        
+    </ul>
+</div>`
+
+    return recently_concluded;
+}
 
 
 
