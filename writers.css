@@ -1,0 +1,111 @@
+
+
+
+  *{
+      margin : 0px;
+      padding : 0px;
+   }
+
+   body{
+    background-color: whitesmoke;
+   }
+   #below_inputbar{
+ display: flex;
+ justify-content: flex-start;
+ width:95%;
+ gap: 15px;
+ align-items: center;
+ margin: auto;
+ margin-top: 2px;
+ padding: 25px;
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+ background-color: white;
+}
+#below_inputbar > p {
+ font-size: 20px;
+ color: black;
+   font-weight: bold; 
+}
+#below_inputbar >  p:hover{
+ 
+ color: blue;
+ cursor: pointer;
+}
+
+
+#topadd{
+ margin: 10px auto 10px auto;
+ display: grid;
+ justify-content: center;
+}
+
+
+    #total_container{
+       width: 95% ;
+       margin: auto;
+       gap:  5px ;
+      margin-top: 25px;
+      display: grid;
+      grid-template-columns: 70% 26%;
+      background-color: white;
+   } 
+
+   #writers {
+      border: 1px solid transparent;
+      width: 98%;
+      line-height: normal;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 5px;
+      border:  1px solid whitesmoke;
+    }
+
+     .wimage{
+      width: 100px;
+      height: 70px;
+      border-radius: 200px;
+      padding: 1px;
+      border: 1 px solid gray;
+    }
+
+    #wcards{
+       display: flex;
+       border:  1px solid whitesmoke;
+       gap: 20px;
+       padding: 10px;
+       /* height: 100px; */
+    }
+
+    .wdetails > h3{
+      color: black;
+    }
+    .wdetails > h4{
+      color: gray;
+    }
+    .wdetails > p {
+      color:  rgb(18, 178, 241);
+    }
+   
+               
+     #sidebar{
+        display: grid;
+        gap: 10px;
+        border:  1px solid transparent;
+    }
+
+        .newscard{
+          display: flex;
+          gap:5px ;
+        }
+
+        .simage{
+         width: 75px;
+         height: 75px;
+         border-radius: 5px;
+        }
+
+        .snews > p{
+          color: gray;
+        }
+
+

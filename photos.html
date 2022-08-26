@@ -4,75 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photos.css" />
     <title>gallery</title>
-    <style> 
-     *{
-           margin: 0;
-           padding: 0;
-     }
-    
-    #gallery-container{
-         margin: auto;
-         width: 95%;
-        border: 1px solid red;
-     }
-      #hgallery{
-        width: 95%;
-        margin: auto auto 15px auto ;
-        height: 50px;
-        border: 1px solid green;
-      }
-    /* #hgallery img{
-         margin: auto;
-         width: 50px;
-         border: 1px solid red;
-      } */
-      #egallery{
-         margin: auto;
-         width: 95%;
-         border: 1px solid red;
-      }
-  
-      #egallery {
-        border: 1px solid blue;
-        display: grid;
-        gap: 10px;
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
-        grid-auto-rows: auto;
-        grid-auto-flow: dense;
-        grid-column:  span 2;
 
-       }
-       #egallery .ecards{
-        grid-row:  span 2;
-       }
-       .ecards{
-        border: 1px solid yellow;
-       }
-
-      #egallery .gimage {
-        /* max-width: 100%; */
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-        vertical-align: middle;
-        display: inline-block;
-      }
-    
-    
-    </style>
 </head>
 <body>
 
-     <h2> gallery</h2>
+  <div id="below_inputbar">
+    <p>Features    | </p>
+    <p id="mhome">Feature home</p>
+    <p id="mwriter">Writers</p>
+    <p id="mmonthly">The Cricket Monthly</p>
+    <p id="mgalleries">Photo Galleries</p>
+</div>
 
-     <div id="gallery-container"> 
-               <div id="hgallery"> 
-               <!-- <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1040/lsci/db/PICTURES/CMS/266000/266042.jpg"> -->
-               </div>
-               <div id="egallery"> </div>
+     <div id="topadd"> 
+        <img src="https://tpc.googlesyndication.com/simgad/10994949654465411539?"  alt="err">
      </div>
+   
+
+      <div id="gallery-container"> 
+           <div id="hgallery"> 
+                <div> 
+                   <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1040/lsci/db/PICTURES/CMS/266000/266042.jpg">
+                </div>
+                <div> 
+                 <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/322300/322312.jpg">
+               </div>
+          </div>
+
+               <div id="egallery"> </div>
+      </div>
     
 </body>
 </html>
@@ -93,7 +55,22 @@ let data= [
             "date": "Jan 16,2020",
           },
           {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/324400/324419.jpg",
+            "title" : "Former India opening batter",
+            "date": "Jan 16,2020",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/313900/313966.jpg",
+            "title" : "Former India opening batter",
+            "date": "Jan 16,2020",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/307300/307387.jpg",
+            "title" : "Former India opening batter",
+            "date": "Jan 16,2020",
+          },
+          {
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/307800/307894.jpg",
             "title" : "Former India opening batter",
             "date": "Jan 16,2020",
           },
@@ -113,35 +90,26 @@ let data= [
             "date": "Jan 16,2020",
           },
           {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/310200/310227.jpg",
             "title" : "Former India opening batter",
             "date": "Jan 16,2020",
           },
           {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/324400/324419.jpg",
             "title" : "Former India opening batter",
             "date": "Jan 16,2020",
           },
           {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/313900/313966.jpg",
             "title" : "Former India opening batter",
             "date": "Jan 16,2020",
           },
           {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
+            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/307300/307387.jpg",
             "title" : "Former India opening batter",
             "date": "Jan 16,2020",
           },
-          {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
-            "title" : "Former India opening batter",
-            "date": "Jan 16,2020",
-          },
-          {
-            "image":  "https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_400/lsci/db/PICTURES/CMS/299300/299397.jpg",
-            "title" : "Former India opening batter",
-            "date": "Jan 16,2020",
-          },
+        
     
     ]
 
@@ -173,6 +141,20 @@ let data= [
    display(data)
 
 
+   document.getElementById("mhome").addEventListener("click",function(){
+  window.location.href = "feat.html"
+})
+
+document.getElementById("mwriter").addEventListener("click",function(){
+  window.location.href = "writers.html"
+})
+
+document.getElementById("mmonthly").addEventListener("click",function(){
+  window.location.href = "monthly.html"
+})
+document.getElementById("mgalleries").addEventListener("click",function(){
+  window.location.href = "photos.html"
+})
 
 
 </script>

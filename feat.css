@@ -2,7 +2,7 @@
    margin : 0px;
    padding : 0px;
 }
-   
+ 
 #below_inputbar{
    display: flex;
    justify-content: flex-start;
@@ -10,25 +10,34 @@
    gap: 15px;
    align-items: center;
    margin: auto;
-   margin-top: 25px;
+   margin-top: 2px;
    padding: 25px;
-   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-   background-color: whitesmoke;
-}
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   background-color: white;
+  }
   #below_inputbar > p {
    font-size: 20px;
- }
- #below_inputbar >  p:hover{
+   color: black;
+   font-weight: bold; 
+  }
+  #below_inputbar >  p:hover{
    
    color: blue;
    cursor: pointer;
-}
+  }
 
 
 #actualnews{
 width: 100%;
 /* margin: 20px; */
-border:  1px solid red;
+/* border:  1px solid red; */
+}
+
+#topadd{
+   margin: 2px auto 2px auto;
+   display: grid;
+   justify-content: center;
+   background-color: whitesmoke ;
 }
 
 #total_container{
@@ -39,7 +48,12 @@ border:  1px solid red;
   display: grid;
    grid-template-columns: 70% 26%;
   justify-content: space-between;
-  border:  1px solid yellowgreen;
+  /* border:  1px solid yellowgreen; */
+}
+#actualnews{
+   border-radius: 10px;
+   border: 1px solid whitesmoke;
+   padding: 5px;
 }
 
  #news_container{
@@ -47,17 +61,18 @@ border:  1px solid red;
       width:99%;
       margin: auto;
        gap: 5px;
-      /* padding-top: 25px; */
-      border: 1px solid green;
-
-} 
-
+     /* padding-top: 25px; */
+      /* border: 1px solid green; */
+      border: 1px solid whitesmoke;
+   }
 
 #newscard{
      display: flex;
      gap:10px;
-     border: 1px solid whitesmoke;
-     background-color: whitesmoke;
+     /* border: 1px solid red; */
+     background-color: white ;
+     /* background-color: whitesmoke; */
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
@@ -83,10 +98,6 @@ border:  1px solid red;
 
 
 
-#sidebar{
-   border:  1px solid yellow;
-}
-  
 
      .reaimage > img {
       border-radius: 10px;
@@ -101,15 +112,25 @@ border:  1px solid red;
         color: black;
       }
  
-     .featdetail > h5{
-       color: gray;
+      #sidebar{
+         display: grid;
+         gap: 10px;
+         border:  1px solid transparent;
      }
 
+         .newscard{
+           display: flex;
+           gap:5px ;
+         }
 
+         .simage{
+          width: 75px;
+          height: 75px;
+          border-radius: 5px;
+         }
 
+         .snews > p{
+           color: gray;
+         }
 
-
-    #sidebar{
-        border:  1px solid yellow;
-    }
-
+ 

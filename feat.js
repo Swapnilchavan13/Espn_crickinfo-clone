@@ -12,23 +12,35 @@
 
   let newsDataArr = [];
 
-
-
   async function getnewsdata(){
 
       let response = await fetch(SPORTS_NEWS+API_KEY);
       newsDataArr = [];
       if(response.status >=200 && response.status < 300) {
          let data = await response.json();
-           newsDataArr  = data.articles ;
-             console.log(data)
-             display(data)
+         newsDataArr  = data.articles ;
+             console.log(newsDataArr)
       } else {
           console.log(response.status, response.statusText);
           newsdetails.innerHTML = "<h5>No data found.</h5>"
           return;
       }
-      display()
+   
+      display()  
+
+    //   try{
+    //     let response = await fetch(SPORTS_NEWS+API_KEY);
+    //      newsDataArr = [];
+    //       let data = await response.json();
+    //       newsDataArr  = data.articles ;
+    //       console.log(newsDataArr)
+
+    //  } catch(err){
+    //    console.log("err",err)
+    //  }
+    //    newsDataArr = newsDataArr.slice(0,6);
+    //    displaymore(newsDataArr)
+
   }
   getnewsdata()
  
@@ -38,28 +50,30 @@
   let container =    document.querySelector("#news_container") ;
   container.innerHTML = null ;
 
-    newsDataArr.forEach(function (elem) {
- 
-        
-        let newscard =  document.createElement('div') ;
-        newscard.setAttribute("id","newscard") ; 
+  newsDataArr.forEach(function (elem) {
 
-         let diva =  document.createElement('div') ;
-         diva.setAttribute("class","reaimage")
+         let newscard =  document.createElement('div') ;
+         newscard.setAttribute("id","newscard") ; 
 
-         let divb =  document.createElement('div') ;
-         divb.setAttribute("class","featdetail")
+          let diva =  document.createElement('div') ;
+          diva.setAttribute("class","reaimage")
+
+          let divb =  document.createElement('div') ;
+          divb.setAttribute("class","featdetail")
      
-         let image = document.createElement('img')
+          let image = document.createElement('img')
           image.src =  elem.urlToImage 
-        
           let title = document.createElement('h4')
           title.innerText = elem.title ;
           let content = document.createElement('p')
-          content.innerText = elem.description
-     ;
+          content.innerText = elem.description ;
           let author = document.createElement('h5')
           author.innerText =  elem.author
+
+          newscard.addEventListener("click", () => {
+            // localStorage.setItem("article", JSON.stringify(elem));
+            window.location.href = elem.url ;
+          });
         
           diva.append(image)
           divb.append(title,content,author)
@@ -67,21 +81,20 @@
           container.append(newscard)
 
       }) ;
-
+  
 }
 
 
 // const SPORTS_NEWS = "https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=";
 // const API_KEY = "9865dcb6e4684a84b7f2a4c9efdeb934";
 
-  async function moreRead()
-   {
+  async function moreRead() {
       let response = await fetch(SPORTS_NEWS+API_KEY);
      newsDataArr = [];
       if(response.status >=200 && response.status < 300) {
          let data = await response.json();
            newsDataArr  = data.articles ;
-           newsDataArr = newsDataArr.slice(1,7);
+           newsDataArr = newsDataArr.slice(0,6);
            console.log(data)
           //  displaymore()
       } else {
@@ -102,47 +115,39 @@
     // console.log("data is ", data);
 
     newsDataArr.forEach(function (elem) {
+      let newscard =  document.createElement('div') ;
+      newscard.setAttribute("class","newscard") ;
 
-        let newscard =  document.createElement('div') ;
-        newscard.setAttribute = ("id","newscard") ;
-        newscard.style.display = "flex" ;
-        newscard.style.gap = "10px" ;
-        newscard.style.border = "1px solid whitesmoke" ;
+       let diva =  document.createElement('div') ;
+       diva.setAttribute("class","simage")
 
-        let diva =  document.createElement('div') ;
-        diva.setAttribute("class","nimage")
-
-        let divb =  document.createElement('div') ;
-         diva.setAttribute("class","news")
-         newscard.style.gap = "5px" ;
+      let divb =  document.createElement('div') ;
+       divb.setAttribute("class","snews")
 
         let image = document.createElement('img')
-          image.src =  elem.urlToImage 
-          diva.setAttribute("class","reaimage")
-          image.style.width = "70px" ;
-          image.style.height = "70px" ;
-          image.style.borderRadius = "10px" ;
+        image.src =  elem.urlToImage 
+        image.setAttribute("class","simage")
+ 
 
-        
-          let title = document.createElement('h4')
-          title.innerText = elem.title
-          let content = document.createElement('p')
-          content.innerText = elem.description
-          content.style.color = "gray " ;
-          let author = document.createElement('p')
-          author.innerText =  elem.author
-          author.style.color = "gainsboro" ;
+        let title = document.createElement('h5')
+        title.innerText = elem.title
+        let author = document.createElement('p')
+        author.innerText =  elem.author
+     
 
-          diva.append(image)
-          divb.append(title,author)
-          newscard.append(diva,divb)
-          container.append(newscard)
+        newscard.addEventListener("click", () => {
+          // localStorage.setItem("article", JSON.stringify(elem));
+          window.location.href = elem.url ;
+        });
+
+        diva.append(image)
+        divb.append(title,author)
+        newscard.append(diva,divb)
+        container.append(newscard)
 
       } ) ;
     
 }
-
-
 
 
 
@@ -155,8 +160,9 @@ document.getElementById("mwriter").addEventListener("click",function(){
 })
 
 document.getElementById("mmonthly").addEventListener("click",function(){
-  window.location.href = "feat.html"
+  window.location.href = "monthly.html"
 })
+
 document.getElementById("mgalleries").addEventListener("click",function(){
-  window.location.href = "writers.html"
+  window.location.href = "photos.html"
 })
