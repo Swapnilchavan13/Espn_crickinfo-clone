@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Check Live Cricket Scores, Match Schedules, News, Cricket Videos Online | ESPNcricinfo.com</title>
+    <link rel="icon" id="titlelogo" type="image/png" href="./image/logo.png">
+    <link rel="stylesheet" href="./style/teams.css">
+    <link rel="stylesheet" href="./style/headerMain.css">
+    <link rel="stylesheet" href="./style/nav_css.css">
+</head>
+
+<body>
+    
+    <div id="headerSec"></div>
+    <div id="main">
+        <h4 style="margin-left: 20px;margin-top: 5px;" >POPULAR INTERNATIONAL TEAMS</h4>
+        <div id="after"></div>
+    </div>
+    <div id="main">
+        <h4 style="margin-left: 20px;margin-top: 5px;">WOMENS TEAMS</h4>
+        <div id="womens_team"></div>
+    </div>
+    <div id="main">
+        <h4 style="margin-left: 20px;margin-top: 5px;">IPL 2022 TEAMS</h4>
+        <div id="ipl_team"></div>
+    </div>
+    <div id="footer_new">
+        <a href="">Terms of Use  </a>
+        <a href=""> Privacy Policy</a>
+       <a href=""> Addendum to the Global Privacy Policy</a>
+       <a href="">Interest-Based Ads</a> 
+       <a href="">Feedback</a>
+       <a style="margin-left: 150px; font-size: 12px;" href="">© 2021 ESPN Sports Media Ltd. All rights reserved</a>
+    </div>
+    
+    <script type="module">
+        import image_arr from './image/country_imaages/country_img.js';
+        import womens_team_logo from './image/womens_team_logo/womens_team_logo.js';
+        import ipl_team_logo from './image/ipl_team_logo/ipl_team_logo.js';
+        var popular_country_img=['Afg.webp','Aus.webp','Ban.webp','Eng.webp','Ind.webp','Ire.webp','New.webp','Pak.webp','Sco.webp','sou.webp','Sri.webp','Uni.webp','Wes.webp','Zim.webp',];
+        var popular_country_name=['Afganistan','Australia','Bangaladesh', 'England','India','Ireland','New zealand','Pakistan','Scotland xi','South Africa','Sri lanka','United Arab Emirates','West Indies','Zimbambe'  ];
+        var popular_womens_teams=['Bangladesh Women','Australia Women','Indian Women','New Zealand Women','Ireland Women','England Women' ,'Pakistan Women','South Africa Women','Sri lanka women','West Indies Women'];
+        var ipl_team2022=['Cheenai Superkings','Delhi Capitals','Gujarat Titans','Kolkata Knight Riders','Lucknow Supergiants','MumbaiIndians','Punjab Kings','Rajasthan Royals','Royal Challangers Bangolare' ,'Sunrisers hydrabad',];
+        var popular_womens_teams_sort= popular_womens_teams.sort();
+        popular_country_img.forEach((ele,index)=>{ var main=document.getElementById('after') ;
+        var div=document.createElement('div');
+        div.setAttribute('class','inner');
+        div.innerHTML=`
+        <img src=${`./image/country_imaages/`+image_arr[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name"><a href="india.html"> ${popular_country_name[index]}</a>  </h2>
+
+        ` 
+        main.append(div) });
+        popular_womens_teams.forEach((ele,index)=>{ var womens_team_div=document.getElementById('womens_team') 
+        var div=document.createElement('div') 
+        div.setAttribute('class','inner') 
+        div.innerHTML=`
+        <img src=${ './image/womens_team_logo/'+womens_team_logo[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name">${popular_womens_teams_sort[index]}</h2>
+        ` 
+        womens_team_div.append(div) }) 
+        ipl_team2022.forEach((ele,index)=>{ var ipl_team_div=document.getElementById('ipl_team') 
+        var div=document.createElement('div') 
+        div.setAttribute('class','inner') 
+        div.innerHTML=`
+        <img src=${ './image/ipl_team_logo/'+ipl_team_logo[index]} alt="" srcset="" class="imgss">
+        <h2 class="country_name">${ipl_team2022[index]}</h2>
+
+        ` 
+        ipl_team_div.append(div) })
+        import { headerSecond } from "./component/headerSecond.js"
+        document.getElementById('headerSec').append(headerSecond())
+        
+    </script>
+    <script type="module" src="./component/headerSecond.js"></script>
+  
+</body>
+
+</html>
