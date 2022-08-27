@@ -48,3 +48,4 @@ JavaScript, HTML5, CSS3
 - Integrated all the pages successfully,
 - Developed the Series page, News Page, Features Page, Teams Page
 - Built future series/tournaments, international tours pages ,
+link- https://crickinfo-clone-unit3.netlify.app/
