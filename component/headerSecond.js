@@ -8,7 +8,7 @@ export function headerSecond() {
     <div class="nav_li">
         <ul>
             <li>
-                <a href="./live_score.html">Live Scores</a>
+                <a href="../live_score.html">Live Scores</a>
                 <ul>
                     <div class="dropdown">
                         <li><a href="">Live Scores Home</a></li>
@@ -47,7 +47,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="./../project.html">Teams</a>
+            <li><a href="./team.html">Teams</a>
                 <ul>
                     <div style="display: flex;width: 350px;">
                         <div class="dropdownteam">
@@ -77,7 +77,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="./../news.html">News</a>
+            <li><a href="./news.html">News</a>
                 <ul>
                     <div class="dropdown">
                         <li><a href="">News Home</a></li>
@@ -88,13 +88,13 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Features</a>
+            <li><a href="./feat.html">Features</a>
                 <ul>
                     <div class="dropdown">
-                        <li><a href="">Features Home</a></li>
-                        <li><a href="">Writers</a></li>
-                        <li><a href="">Photo Galleries</a></li>
-                        <li><a href="">The Cricket Monthly</a></li>
+                        <li><a href="feat.html">Features Home</a></li>
+                        <li><a href="writers.html">Writers</a></li>
+                        <li><a href="photos.html">Photo Galleries</a></li>
+                        <li><a href="monthly.html">The Cricket Monthly</a></li>
                     </div>
                 </ul>
             </li>
