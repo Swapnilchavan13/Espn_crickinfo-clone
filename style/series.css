@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    font-family: BentonSansBold, Arial, sans-serif;
+}
+
+.h-center {
+    margin: auto;
+}
+
+#header-wrapper {
+    width: 100%;
+    min-height: 1px;
+}
+
+#sub-header-wrapper {
+    width: 100%;
+    height: 7.5vh;
+    background-color: white;
+}
+
+#sub-header {
+    width: 83%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#top-ad {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+#top-ad > img {
+    width: 87%;
+    height: 100%;
+    margin: auto;
+}
+
+#main-wrapper {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#main-wrapper > div {
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main-left {
+    width: 74.5%;
+    box-sizing: border-box;
+    
+}
+
+#main-right {
+    width: 24%;
+    min-height: 400px;
+    box-sizing: border-box;
+
+}
+
+#series-type {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+}
+
+#series-type li {
+    list-style: none;
+    padding: 15px 45px;
+    text-decoration: none;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+#series-type li:hover {
+    color:  #439ec9;
+    cursor: pointer;
+}
+
+#series-type li:nth-child(2) {
+    border-left: 1px solid rgb(202, 195, 195);
+    border-right: 1px solid rgb(202, 195, 195);
+}
+
+#series {
+    width: 100%;
+    border-top: 1px solid rgb(202, 195, 195);
+    padding: 30px 30px 0px;
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    
+}
+
+#download-tours-prog {
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+}
+
+#download-tours-prog a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    
+    /* box-sizing: border-box; */
+
+}
+
+#download-tours-prog a:hover {
+    color: #439ec9;
+}
+
+.down_icon {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    z-index: 1;
+    background-image: url(https://i.imgci.com/espncricinfo/redesign/sprite-black-hp-9.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: -338px -146px;
+    display: inline-block;
+    top: 3px;
+    margin: 0 5px 0 0;
+    transform: rotate(180deg);
+}
+
+
+#bottom {
+    width: 100%;
+}
+
+#bottom > div {
+    width: 83%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#bottom > div  div:nth-child(1) {
+    width: 70%;
+    height: 100%;
+}
+
+#bottom > .h-center  div:nth-child(2) {
+    width: 30%;
+    height: 100%;
+}
+
+#bottom ul {
+    list-style: none;
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+#bottom li {
+    padding: 0 10px;
+    border-right: 1px solid #5c5c5c;
+    
+}
+
+#bottom a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+#bottom ul:first-child li:first-child,
+#bottom ul:last-child li:first-child {
+    padding-left: 0;
+}
+
+#bottom ul:first-child li:last-child,
+#bottom ul:last-child li:last-child {
+    border-right: 0px;
+}
+
+#logo div:nth-child(1) {
+    width: 100%;
+    height: 30px; 
+    display: flex;
+    justify-content: right;
+}
+
+#logo img {
+    width: 372px;
+    height: 18px;
+    text-align: right;
+    display: inline-block;
+} 
+
+#bottom .h-center #logo div:last-child span {
+    width: 300px;
+    height: 20px;
+    font-size: 12px;
+    display: inline;
+}
+
+
+
+#ser-left,
+#ser-right {
+    width: 50%;
+    box-sizing: border-box;
+    
+    
+}
+
+#ser-right {
+    padding-left: 30px;
+    border-left: 1px solid rgb(202, 195, 195);
+}
+
+#series h2 {
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#series ul {
+    margin: 10px 0 40px 0;
+    list-style: none;
+
+}
+
+#series a {
+    text-decoration: none;
+    color: #439ec9;
+}
+#series li {
+    display: block;
+    line-height: 30px;
+    font-size: 16px;
+    padding: 5px;
+    
+}
+
+#series a:hover {
+    color: #0473a7;
+    cursor: pointer;
+}
+
+#tweets {
+    width: 100%;
+}
+
+#right-ad1 {
+    margin-bottom: 20px;
+    width: 100%;
+    min-height: 250px;
+}
+
+#right-ad2 {
+    width: 100%;
+    min-height: 250px;
+    margin-top: 10px;
+}
+
+#right-ad1 > img,
+#right-ad2 > img {
+    width: 100%;
+}
+
+/* header navbar  */
+#headerSec {
+    width: 100%;
+    height: 45px;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+
+#headerSecond {
+    width: 100%;
+    background-color: #03a9f4;
+    height: 45px;
+    display: flex;
+}
+
+
+
+
+
