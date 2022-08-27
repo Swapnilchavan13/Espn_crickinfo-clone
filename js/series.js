@@ -1,3 +1,6 @@
+
+
+
 let top_ads = ["https://tpc.googlesyndication.com/simgad/11321537340682502286?",
     "https://tpc.googlesyndication.com/simgad/4271044209677937619?"]
 
@@ -79,7 +82,7 @@ function currentCricket() {
     <h2>International Tours</h2>
     <ul>
 
-        <li><a href="#">India vs Zimbabwe </a></li>
+        <li><a href="./ind-vs-zim.html">India vs Zimbabwe </a></li>
         <li><a href="#">England vs South Africa</a></li>
         <li><a href="#">Zimbabwe v Pakistan</a></li>
         <li><a href="#">Nepal Tri-Nation T20I</a></li>
