@@ -24,25 +24,25 @@ export function headerSecond() {
                 <ul>
                     <div class="dropdownbig">
                         <div class="dropdown">
-                            <li><a href="">IPL 2021</a></li>
-                            <li><a href="">Zimbabwe v Pakistan</a></li>
-                            <li><a href="">Nepal Tri-Nation</a></li>
-                            <li><a href="">Sheffield Shield</a></li>
-                            <li><a href="">Country Championship</a></li>
-                            <li><a href="">Cricket World Cup League 2</a></li>
+                            <li><a href="">Asia Cup</a></li>
+                            <li><a href="">NZ-A in IND</a></li>
+                            <li><a href="">Australia vs Zimbabwe</a></li>
+                            <li><a href="">The Hunderd(W)</a></li>
+                            <li><a href="">County Div2</a></li>
+                            <li><a href="">6IXTY(W)</a></li>
                             <li><a href="">CWC Challenge League B</a></li>
                             <li><a href="">World Test Championship</a></li>
                             <li><a href="">-Archives-</a></li>
                         </div>
                         <div class="dropdown">
-                            <li><a href="">South Africa v Pakistan</a></li>
-                            <li><a href="">Sri Lanka v Bangladesh</a></li>
-                            <li><a href="">March Cup</a></li>
-                            <li><a href="">A20 League</a></li>
-                            <li><a href="">ICC Women's Championship</a></li>
-                            <li><a href="">CWC Challenge League A</a></li>
-                            <li><a href="">ICC CWC Super League</a></li>
-                            <li><a href="">-Future Super League</a></li>
+                            <li><a href="">Aisa Cup QLF</a></li>
+                            <li><a href="">ENgland v South Africa</a></li>
+                            <li><a href="">The Hunderd</a></li>
+                            <li><a href="">County Div1</a></li>
+                            <li><a href="">Maharaja T20</a></li>
+                            <li><a href="">6IXTY</a></li>
+                            <li><a href="">Women's Champions</a></li>
+                            <li><a href="">-Future Super</a></li>
                         </div>
                     </div>
                 </ul>
@@ -81,7 +81,10 @@ export function headerSecond() {
                 <ul>
                     <div class="dropdown">
                         <li><a href="">News Home</a></li>
-                        <li><a href="">In Focus</a></li>
+                        <li><a href="">Future Of ODIs</a></li>
+                        <li><a href="">Ball-tampering</a></li>
+                        <li><a href="">Technology in Cricket</a></li>
+                        <li><a href="">Racism</a></li>
                     </div>
                 </ul>
             </li>
@@ -90,6 +93,7 @@ export function headerSecond() {
                     <div class="dropdown">
                         <li><a href="">Features Home</a></li>
                         <li><a href="">Writers</a></li>
+                        <li><a href="">Photo Galleries</a></li>
                         <li><a href="">The Cricket Monthly</a></li>
                     </div>
                 </ul>
@@ -127,13 +131,15 @@ export function headerSecond() {
                     <div class="dropdownbig">
                         <div class="dropdown">
                             <li><a href="">Stats home</a></li>
+                            <li><a href="">IPl 2022</a></li>
                             <li><a href="">SuperStats</a></li>
                             <li><a href="">All records</a></li>
                             <li><a href="">Grounds</a></li>
                         </div>
                         <div class="dropdown">
+                            <li><a href="">AskCricinfo</a></li>
                             <li><a href="">Statsguru</a></li>
-                            <li><a href="">2021 records</a></li>
+                            <li><a href="">2022 records</a></li>
                             <li><a href="">Players</a></li>
                             <li><a href="">Rankings</a></li>
                         </div>
