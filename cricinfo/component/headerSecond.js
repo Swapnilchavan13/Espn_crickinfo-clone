@@ -47,7 +47,7 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="./../project.html">Teams</a>
+            <li><a href="./../team.html">Teams</a>
                 <ul>
                     <div style="display: flex;width: 350px;">
                         <div class="dropdownteam">
