@@ -1,0 +1,42 @@
+#footer {
+    width: 80%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 2px 5px 1px rgb(221, 219, 219);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+#footerMain,
+#footerButtom {
+    display: flex;
+    padding: 10px 56px 0px;
+}
+
+#footerMain>div>div>li>a {
+    text-decoration: none;
+    color: #5d5d5f;
+    font-size: .76rem;
+}
+
+#footerMain>div>div>li>a:hover,
+#footerButtomLink>a:hover {
+    color: #038dcc;
+}
+
+#footerMain>div {
+    width: 180px;
+    padding: 8px;
+}
+
+#footerButtomLink {
+    padding-left: 20%;
+}
+
+#footerButtomLink>a {
+    text-decoration: none;
+    color: #5d5d5f;
+    font-size: .88rem;
+    margin: 13px;
+}
