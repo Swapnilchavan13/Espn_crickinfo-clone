@@ -1,0 +1,136 @@
+*{
+   margin : 0px;
+   padding : 0px;
+}
+ 
+#below_inputbar{
+   display: flex;
+   justify-content: flex-start;
+   width:95%;
+   gap: 15px;
+   align-items: center;
+   margin: auto;
+   margin-top: 2px;
+   padding: 25px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   background-color: white;
+  }
+  #below_inputbar > p {
+   font-size: 20px;
+   color: black;
+   font-weight: bold; 
+  }
+  #below_inputbar >  p:hover{
+   
+   color: blue;
+   cursor: pointer;
+  }
+
+
+#actualnews{
+width: 100%;
+/* margin: 20px; */
+/* border:  1px solid red; */
+}
+
+#topadd{
+   margin: 2px auto 2px auto;
+   display: grid;
+   justify-content: center;
+   background-color: whitesmoke ;
+}
+
+#total_container{
+  margin: 0px 100px;
+  width: 95% ;
+  margin: 25px auto;
+  padding: 10px;
+  display: grid;
+   grid-template-columns: 70% 26%;
+  justify-content: space-between;
+  /* border:  1px solid yellowgreen; */
+}
+#actualnews{
+   border-radius: 10px;
+   border: 1px solid whitesmoke;
+   padding: 5px;
+}
+
+ #news_container{
+      display: grid;
+      width:99%;
+      margin: auto;
+       gap: 5px;
+     /* padding-top: 25px; */
+      /* border: 1px solid green; */
+      border: 1px solid whitesmoke;
+   }
+
+#newscard{
+     display: flex;
+     gap:10px;
+     /* border: 1px solid red; */
+     background-color: white ;
+     /* background-color: whitesmoke; */
+     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+
+.reaimage > img {
+ border-radius: 10px;
+ width : 300px ;
+ height :150px;
+}
+.featdetail{
+   line-height: 1.5em;
+}
+
+.featdetail > h4{
+   color: black;
+ }
+
+.featdetail > h5{
+  color: gray;
+}
+
+
+
+
+
+
+     .reaimage > img {
+      border-radius: 10px;
+      width : 300px ;
+      height :150px;
+     }
+     .featdetail{
+        line-height: 1.5em;
+     }
+   
+     .featdetail > h4{
+        color: black;
+      }
+ 
+      #sidebar{
+         display: grid;
+         gap: 10px;
+         border:  1px solid transparent;
+     }
+
+         .newscard{
+           display: flex;
+           gap:5px ;
+         }
+
+         .simage{
+          width: 75px;
+          height: 75px;
+          border-radius: 5px;
+         }
+
+         .snews > p{
+           color: gray;
+         }
+
+ 

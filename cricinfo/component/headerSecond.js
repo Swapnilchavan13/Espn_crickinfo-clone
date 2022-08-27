@@ -88,13 +88,13 @@ export function headerSecond() {
                     </div>
                 </ul>
             </li>
-            <li><a href="#">Features</a>
+            <li><a href="feat.html">Features</a>
                 <ul>
                     <div class="dropdown">
-                        <li><a href="">Features Home</a></li>
-                        <li><a href="">Writers</a></li>
-                        <li><a href="">Photo Galleries</a></li>
-                        <li><a href="">The Cricket Monthly</a></li>
+                        <li><a href="feat.html">Features Home</a></li>
+                        <li><a href="writers.html">Writers</a></li>
+                        <li><a href="photos.html">Photo Galleries</a></li>
+                        <li><a href="monthly.html">The Cricket Monthly</a></li>
                     </div>
                 </ul>
             </li>
