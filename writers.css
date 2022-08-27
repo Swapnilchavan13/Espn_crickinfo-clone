@@ -80,12 +80,18 @@
       color: black;
     }
     .wdetails > h4{
-      color: gray;
+      font-weight: 200;
+      text-decoration: none ;
     }
     .wdetails > p {
       color:  rgb(18, 178, 241);
     }
    
+    #side > div:nth-child(3){
+      display: grid;
+      justify-content: center;
+      margin: 15px auto;
+    }
                
      #sidebar{
         display: grid;
