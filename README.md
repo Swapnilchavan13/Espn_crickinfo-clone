@@ -4,7 +4,7 @@
 #ESPNcricinfo
 ESPN cricinfo is a sports news website exclusively for the game of cricket. The site features news, articles, live coverage of cricket matches, and StatsGuru, a database of historical matches and players from the 18th century to the present.
 <br>
-I worked on this project during unit-3 construct week at Masai School with the help of other five team members.
+I worked on this project during unit-3 construct week at Masai School with the help of other four team members.
 
 ## Tech stack used in this project
 
