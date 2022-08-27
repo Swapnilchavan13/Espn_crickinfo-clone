@@ -18,6 +18,25 @@ JavaScript, HTML5, CSS3
 <a href="https://github.com/Himanshu0894">Himanshu Kumar</a></br>
 
 
+## Screenshots
+
+## Home page of the website by NILESH
+![Home Page](https://user-images.githubusercontent.com/98731008/187043441-fdf0717e-a2a9-4ac3-a1fd-14b8763a59be.png)
+
+## Series page of the website by ANMOL
+![Series page](https://user-images.githubusercontent.com/98731008/187043529-0e10f91a-2139-4605-989d-7f4a160f417b.png)
+
+## News page of the website by SWAPNIL
+![mews page](https://user-images.githubusercontent.com/98731008/187043585-35305af1-bd5a-4a21-957c-b5045234b075.png)
+
+## Teams page of the website by HIMANSHU
+![Teams page](https://user-images.githubusercontent.com/98731008/187043606-972e099b-3471-4cf2-9908-e19937f9c9e1.png)
+
+## Features page of the website by RAJA
+![Features page](https://user-images.githubusercontent.com/98731008/187043621-cd1aad85-8016-45eb-9b61-11e0c58c3cd4.png)
+
+
+
 ## Features
 
 - Responsive Home Page
