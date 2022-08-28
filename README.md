@@ -23,7 +23,7 @@ JavaScript, HTML5, CSS3
 ## Home page of the website by NILESH
 ![Home Page](https://user-images.githubusercontent.com/98731008/187043441-fdf0717e-a2a9-4ac3-a1fd-14b8763a59be.png)
 
-## Series page of the website by ANMOL
+## Series page of the website by ANMOL SHARMA
 ![Series page](https://user-images.githubusercontent.com/98731008/187043529-0e10f91a-2139-4605-989d-7f4a160f417b.png)
 
 ## News page of the website by SWAPNIL
